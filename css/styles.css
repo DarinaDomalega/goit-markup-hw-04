@@ -123,13 +123,6 @@ img {
   margin-right: 0;
 }
 
-.list-contacts-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  line-height: 16px;
-}
-
 .first {
   margin-left: 330px;
 }
@@ -174,12 +167,31 @@ img {
   color: var(--accent-color);
 }
 
+.list-contacts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 16px;
+}
+
+.links .mail {
+  color: var(--accent-color);
+}
+
 .contacts-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1x;
   letter-spacing: 0.02em;
   color: #757575;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: var(--accent-color);
 }
 
 .contacts-header:hover,
@@ -189,12 +201,18 @@ img {
 
 .hero {
   display: block;
-  background-color: var(--bg-grey-color);
+  background-color: #c4c4c4;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
   text-align: center;
   padding: 200px 0;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mg-4hw.jpg);
+  background-size: cover;
 }
 .main-title {
   font-weight: 900;
@@ -232,6 +250,16 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin-top: 30px;
+}
+
+.foto-box-first {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .description {
@@ -342,6 +370,46 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.social-list-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-team {
+  fill: #afb1b8;
+}
+
+.icon-team:hover {
+  fill: white;
+}
+
+.social-list-icons {
+  margin-right: 10px;
+}
+
+.social-list-icons:last-child {
+  margin-right: 0;
+}
+
+.social-list-icons::marker {
+  content: none;
+}
+.social-icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icons-list:hover,
+.social-icons-list:focus {
+  background-color: var(--accent-color);
+  color: white;
 }
 
 .team-workers-list:last-child {
