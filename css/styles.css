@@ -26,7 +26,7 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   color: #212121;
-  background-color: FFFFFF;
+  background-color: #ffffff;
 }
 
 h1,
@@ -378,14 +378,19 @@ img {
   margin-bottom: 30px;
 }
 
+.social-icons-list:hover,
+.social-icons-list:focus {
+  background-color: var(--accent-hover-color);
+}
+
+.social-icons-list:hover .icon-team,
+.social-icons-list:focus .icon-team {
+  fill: var(--white-text-color);
+}
+
 .icon-team {
   fill: #afb1b8;
 }
-
-.icon-team:hover {
-  fill: white;
-}
-
 .social-list-icons {
   margin-right: 10px;
 }
@@ -406,13 +411,7 @@ img {
   border-radius: 50%;
 }
 
-.social-icons-list:hover,
-.social-icons-list:focus {
-  background-color: var(--accent-color);
-  color: white;
-}
-
-.team-workers-list:last-child {
+.icon-team .team-workers-list:last-child {
   margin-right: 0;
 }
 
@@ -446,6 +445,56 @@ img {
   padding-bottom: 30px;
 }
 
+/* OUR CLIENTS */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-companies::marker {
+  content: none;
+}
+
+.list-companies {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  padding: 16px 32px;
+}
+
+.list-companies:last-child {
+  margin-right: 0;
+}
+
+.icon-company {
+  fill: #afb1b8;
+}
+
+.links-companies:hover .icon-company,
+.links-companies:focus .icon-company {
+  fill: var(--accent-color);
+}
+
+.list-companies:hover,
+.list-companies:focus {
+  border-color: var(--accent-color);
+}
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-companies {
+  display: flex;
+  justify-content: center;
+}
+
+/* FOOTTER */
 .footer {
   background-color: #2f303a;
   color: #ffffff;
