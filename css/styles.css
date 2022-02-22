@@ -191,7 +191,15 @@ img {
 
 .contacts-icon {
   margin-right: 10px;
+}
+
+.mail-icon {
   fill: var(--accent-color);
+}
+
+.contacts-header .contacts-icon:hover,
+.contacts-header .contacts-icon:focus {
+  fill: var(--accent-hover-color);
 }
 
 .contacts-header:hover,
@@ -514,10 +522,6 @@ img {
 .footer > .footer-divs {
   display: flex;
   align-items: baseline;
-}
-
-.container-footer {
-  margin-right: ;
 }
 
 .social-list-icon-adress {
