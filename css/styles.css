@@ -503,6 +503,27 @@ img {
   display: block;
 }
 
+.footer-divs {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-list-icon-adress {
+  display: flex;
+}
+
+.social-list-icons-footer {
+  margin-right: 10px;
+}
+
 .logo-footer {
   display: inline-block;
   text-decoration: none;
@@ -557,6 +578,27 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .address:hover {
